@@ -1,0 +1,5 @@
+<%= form_tag({action: :create}, multipart: true) do %>
+   <%= file_field_tag 'file' %>
+   <%= select_tag "exchange", options_for_select(["Binance", "Coinbase"]) %>
+   <%= submit_tag 'Import' %>
+<% end %>

@@ -1,0 +1,24 @@
+
+<% if @binanceTrades.any? %>
+<table style="width:100%">
+  <tr>
+  	<% @binanceHeaders.each do |header| %>
+  	  <th><%= header %></th>
+  	<% end %>
+  </tr>
+  <% @binanceTrades.each do |trade| %>
+  <tr>
+    <td><%= trade.date %></td>
+    <td><%= trade.market %></td>
+    <td><%= trade.tradeType %></td>
+    <td><%= trade.price %></td>
+    <td><%= trade.amount %></td>
+    <td><%= trade.total %></td>
+    <td><%= trade.fee %></td>
+    <td><%= trade.feeCoin %></td>
+  </tr>
+  <% end %>
+</table>
+
+<% end %>
+

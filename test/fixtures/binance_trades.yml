@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  userEmail: MyString
+  date: MyString
+  market: MyString
+  type: 
+  price: MyString
+  amount: MyString
+  total: MyString
+  fee: MyString
+  feeCoin: MyString
+
+two:
+  userEmail: MyString
+  date: MyString
+  market: MyString
+  type: 
+  price: MyString
+  amount: MyString
+  total: MyString
+  fee: MyString
+  feeCoin: MyString

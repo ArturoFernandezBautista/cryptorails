@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Proyecto Cripto Rails.application.credentials.coinmarket_api 
-</title>
+    <title>Proyecto Cripto</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,6 +11,10 @@
   </head>
 
   <body>
+    <%= link_to 'Import Document', document_new_path %>
+    <%= link_to 'Delete All', document_destroy_path,
+            data: {:confirm => 'Are you sure?'}, :method => :delete %>
+
     <%= yield %>
   </body>
 </html>
