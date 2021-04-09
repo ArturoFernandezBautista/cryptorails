@@ -1,0 +1,7 @@
+<% if @wallets.any? %>
+    <ul> 
+        <% @wallets.each do |wallet| %>
+            <li> Asset: <%= wallet.asset %> , Amount: <%= wallet.amount %>  </li>
+        <% end %>
+    </ul>
+<% end %>

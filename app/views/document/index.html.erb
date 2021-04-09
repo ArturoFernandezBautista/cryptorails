@@ -2,12 +2,14 @@
 <% if @binanceTrades.any? %>
 <table style="width:100%">
   <tr>
+    <th>Index</th>
   	<% @binanceHeaders.each do |header| %>
   	  <th><%= header %></th>
   	<% end %>
   </tr>
-  <% @binanceTrades.each do |trade| %>
+  <% @binanceTrades.each_with_index do |trade, index| %>
   <tr>
+    <td><%= index + 1 %></td>
     <td><%= trade.date %></td>
     <td><%= trade.market %></td>
     <td><%= trade.tradeType %></td>
@@ -16,6 +18,33 @@
     <td><%= trade.total %></td>
     <td><%= trade.fee %></td>
     <td><%= trade.feeCoin %></td>
+  </tr>
+  <% end %>
+</table>
+
+<% end %>
+
+
+<% if @coinbaseTrades.any? %>
+<table style="width:100%">
+  <tr>
+    <th>Index</th>
+  	<% @coinbaseHeaders.each do |header| %>
+  	  <th><%= header %></th>
+  	<% end %>
+  </tr>
+  <% @coinbaseTrades.each_with_index do |trade, index| %>
+  <tr>
+    <td><%= index + 1 %></td>
+    <td><%= trade.timestamp %></td>
+    <td><%= trade.transactionType %></td>
+    <td><%= trade.asset %></td>
+    <td><%= trade.quantityTransacted %></td>
+    <td><%= trade.eurSpotPrice %></td>
+    <td><%= trade.eurSubtotal %></td>
+    <td><%= trade.eurTotal %></td>
+    <td><%= trade.eurFees %></td>
+    <td><%= trade.notes %></td>
   </tr>
   <% end %>
 </table>

@@ -1,0 +1,2 @@
+class CoinbaseTrade < ApplicationRecord
+end

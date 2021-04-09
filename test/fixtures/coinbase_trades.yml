@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  userEmail: MyString
+  timestamp: MyString
+  transactionType: MyString
+  asset: MyString
+  quantityTransacted: MyString
+  eurSpotPrice: MyString
+  eurSubtotal: MyString
+  eurTotal: MyString
+  eurFees: MyString
+  notes: MyString
+
+two:
+  userEmail: MyString
+  timestamp: MyString
+  transactionType: MyString
+  asset: MyString
+  quantityTransacted: MyString
+  eurSpotPrice: MyString
+  eurSubtotal: MyString
+  eurTotal: MyString
+  eurFees: MyString
+  notes: MyString
